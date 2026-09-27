@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li[for="label"]{
+            color: yellow;
+        }
+        span{
+            color: red;
+        }
+        ul>li.two>span{
+            color: violet;
+        }
+        li:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Universal</li>
+        <li class="two">Id</li>
+        <li>Class Class</li>
+        <li for="label">Atribute</li>
+        <li class="two">Element
+            <span>E1</span>
+        </li>
+        <li>Combinators</li>
+        <li>Pseudo Class</li>
+        <li>Pseudo Element</li>
+    </ul>
+</body>
+</html>

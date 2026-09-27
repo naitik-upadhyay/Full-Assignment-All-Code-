@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background-color: lightyellow;
+        }
+
+        input {
+            margin: 3px;
+            border-width: 0 0 2px 0;
+            border-color: blue;
+            background-color: grey;
+            border-radius: 20px;
+        }
+
+        /*
+        :enabled
+        :disabled
+        :valid
+        :invalid
+        :required
+        :optional
+        :in-range
+        :out-of-range
+        :read-only
+        :read-write
+        :placeholder-shown
+        :checked*/
+        input:enabled {
+            background-color: #ffffff;
+            border: 2px solid #3b82f6;
+            color: #000000;
+        }
+
+        input:disabled {
+            background-color: #f3f4f6;
+            border: 2px solid #d1d5db;
+            color: #9ca3af;
+            cursor: not-allowed;
+        }
+
+        input:hover {
+            box-shadow: 5px 5px 10px blue;
+        }
+
+        input:valid {
+            color: green;
+        }
+
+        input:in-valid {
+            color: red;
+        }
+
+        input:checked{
+            box-shadow: 3px 3px 0 black;
+        }
+
+        input:read-only{
+            box-shadow: 3px 3px 0 black;
+        }
+
+        input:read-write{
+            box-shadow: 3px 3px 0 black;
+        }
+
+        
+        input:placeholder-shown {
+            color: "white";
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <input type="text" placeholder="First Name" required /><br /><br />
+        <input type="text" placeholder="Middle Name" required /><br /><br />
+        <input type="text" placeholder="Last Name" required /><br /><br />
+        <input type="button" placeholder="Submit" required style="width:100px; height:30px" /><br /><br />
+        <input type="number" placeholder="age" font-color="white" /><br /><br />
+        <input type="text" placeholder="Enter Location" /><br /><br />
+
+
+    </form>
+</body>
+
+</html>

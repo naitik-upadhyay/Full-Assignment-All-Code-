@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            height: 500px;
+            width: 500px;
+            grid-template-areas: "box1 box1 box2"
+                                 "box1 box1 box3"
+                                 "box4 box5 box6";
+
+            outline: 1px dashed grey;
+            gap: 5px;
+        }
+
+        .container>div{
+            outline: 1px dashed grey;
+        }
+        .container>div>p{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="grid-area: box1;"><p>1</p></div>
+        <div style="grid-area: box2;"><p>2</p></div>
+        <div style="grid-area: box3;"><p>3</p></div>
+        <div style="grid-area: box4;"><p>4</p></div>
+        <div style="grid-area: box5;"><p>5</p></div>
+        <div style="grid-area: box6;"><p>6</p></div>
+    </div>
+</body>
+</html>
